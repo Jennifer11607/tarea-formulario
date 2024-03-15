@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+    <link rel="icon" type="image/x-icon" href="./ancla.jpg">
+</head>
+<style>
+body{
+    background-image: url(../lili.jpg);
+    background-size: cover; 
+    background-repeat: no-repeat;
+}
+.carousel-control-prev,
+.carousel-control-next {
+    text-align: center; /* Centrar el texto horizontalmente */
+}
+
+h1{
+    text-align: center;
+    font-family: fantasy;
+}
+.dive{
+    border: 2mm solid rgba(0, 0, 0, 0.625);
+    background-color: rgba(88, 100, 108, 0.523);
+    width: 30cm;
+    text-align: center;
+    margin-left: 2.5cm;
+    margin-top: 1cm;
+    
+    
+
+}
+.row{
+  margin-left: 1cm;
+  margin-right: 1cm;
+  font-size: 15px;
+}
+
+
+.form-control{
+    border-radius: 2cm;
+border: 1mm solid skyblue;
+font-size: 20px;
+text-align: center;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+.form-select{
+border-radius: 2cm;
+border: 1mm solid skyblue;
+}
+.form-label{
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.tabla{
+background-color: rgba(192, 192, 192, 0.364);
+width: 35cm;
+    text-align: center;
+    margin: 1cm;
+    margin-left: 3cm;
+
+}
+.imagen{
+font-size: 1px;
+width: 200px;
+height: 200px;
+border:  1mm solid rgba(0, 0, 0, 0.366);
+border-radius: 2cm;
+
+}
+
+.boton{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+</style>
+
+   
+<body>
+<!-- primero -->
+<div class="tabla">
+  <img src="./icono.png" alt="" class="imagen">
+    <div class="dive">
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <h1>Formulario de Informacion Personal</h1>
+                
+            <div class="row">
+            <div class="col-4 "><form>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">CATALOGO</label>
+                  <input type="number" class="form-control">
+                </div>
+            </form></div>
+            <div class="col-8"><form>
+                <div class="mb-3">
+                  <label for="" class="form-label">GRADO Y ARMA</label>
+                  <input type="text" class="form-control">
+                </div>
+            </form></div>
+            </div>
+
+
+          <div class="row">
+            <div class="col "><form>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">APELLIDO</label>
+                  <input type="text" class="form-control">
+                </div>
+            </form></div>
+            <div class="col "><form>
+                <div class="mb-3">
+                  <label for="" class="form-label">NOMBRE</label>
+                  <input type="text" class="form-control">
+                </div>
+            </form></div>
+            </div>
+
+            <div class="row">
+              <div class="col "><form>
+                  <div class="mb-3">
+                    <label for="date" class="form-label">FECHA DE NACIMIENTO</label>
+                    <input type="date" class="form-control">
+                  </div>
+              </form></div>
+              <div class="col "><form>
+                  <div class="mb-3">
+                    <label for="" class="form-label">LUGAR DE NACIMIENTO</label>
+                    <input type="text" class="form-control">
+                  </div>
+              </form></div>
+              </div>
+
+
+              <div class="row">
+                <div class="col-5 "><label for="text" class="form-label">RELIGION</label>
+                  <select class="form-select" aria-label="Default select example">
+                  <option selected>Seleccionar</option>
+                  <option value="1">CATOLICO</option>
+                  <option value="2">EVANGELICO</option>
+                  <option value="3">MORMON</option>
+                  <option value="4">TESTIGO DE JEHOVA</option>
+                  <option value="5">ATEO</option>
+                </select></div>
+                <div class="col-7 "><form>
+                    <div class="mb-3">
+                      <label for="text" class="form-label">DIRECCION ACTUAL</label>
+                      <input type="text" class="form-control">
+                    </div>
+                </form></div>
+                </div>
+
+              <div class="row">
+                  <div class="col-4 "><form>
+                      <div class="mb-3">
+                        <label for="number" class="form-label">TELEFONO CASA</label>
+                        <input type="number" class="form-control">
+                      </div>
+                  </form></div>
+                  <div class="col-8 "><form>
+                      <div class="mb-3">
+                        <label for="email" class="form-label">CORREO ELECTRONICO</label>
+                        <input type="email" class="form-control" placeholder="@gmail.com">
+                      </div>
+                  </form></div>
+                  </div>
+                  <div class="row">
+                    <div class="col-4 "><form>
+                        <div class="mb-3">
+                          <label for="number" class="form-label">TELEFONO CELULAR</label>
+                          <input type="number" class="form-control">
+                        </div>
+                    </form></div>
+                    <div class="col-8 "><form>
+                        <div class="mb-3">
+                          <label for="email" class="form-label">CORREO MILITAR</label>
+                          <input type="email" class="form-control" placeholder="@gmail.com" required>
+                        </div>
+                    </form></div>
+                    </div>
+
+
+          </div>
+          <!-- otro -->
+
+
+          
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-4 "><form>
+                  <div class="mb-3">
+                    <label for="number" class="form-label">NIT</label>
+                    <input type="number" class="form-control" required>
+                  </div>
+              </form></div>
+              <div class="col-8 "><form>
+                  <div class="mb-3">
+                    <label for="tex" class="form-label">PROFESION U OFICIO</label>
+                    <input type="text" class="form-control"required>
+                  </div>
+              </form></div>
+              </div>
+
+              <div class="row">
+                  <div class="col-4 "><form>
+                      <div class="mb-3">
+                        <label for="text" class="form-label">TIPO DE SANGRE</label>
+                        <input type="text" class="form-control" required>
+                      </div>
+                  </form></div>
+                  <div class="col-8 "><form>
+                      <div class="mb-3">
+                        <label for="tex" class="form-label">PUESTO QUE DESEMPEÑA</label>
+                        <input type="text" class="form-control"required>
+                      </div>
+                  </form></div>
+                  </div>
+
+                  <div class="row">
+                      <div class="col-7 "><form>
+                          <div class="mb-3">
+                            <label for="date" class="form-label">FECHA DE ALTA EN ESTE COMANDO</label>
+                            <input type="date" class="form-control" required>
+                          </div>
+                      </form></div>
+                      <div class="col-5 "><form>
+                          <div class="mb-3">
+                            <label for="number" class="form-label">ORDEN GENERAL No.</label>
+                            <input type="number" class="form-control"required>
+                          </div>
+                      </form></div>
+                      </div>
+
+                      <div class="row">
+                        <div class="col-8 "><form>
+                            <div class="mb-3">
+                              <label for="date" class="form-label">FECHA DE ALTA COMO OFICIAL/ ESPECIALISTA DEL EJERCITO</label>
+                              <input type="date" class="form-control" required>
+                            </div>
+                        </form></div>
+                        <div class="col-4 "><form>
+                            <div class="mb-3">
+                              <label for="number" class="form-label">PROMOCION</label>
+                              <input type="number" class="form-control"required>
+                            </div>
+                        </form></div>
+                      </div>
+          </div>
+<!-- segundo -->
+         
+          <div class="carousel-item">
+            
+
+            <div class="row">
+              <div class="col-5 "><form>
+                  <div class="mb-3">
+                    <label for="number" class="form-label">DPI</label>
+                    <input type="number" class="form-control" required>
+                  </div>
+              </form></div>
+              <div class="col-7 "><form>
+                  <div class="mb-3">
+                    <label for="text" class="form-label">LUGAR DE EXTENSION:</label>
+                    <input type="text" class="form-control"required>
+                  </div>
+              </form></div>
+              </div>
+
+
+            <div class="row">
+              <div class="col-5 "><form>
+                  <div class="mb-3">
+                    <label for="text" class="form-label">NOMBRE DEL PADRE</label>
+                    <input type="text" class="form-control" required>
+                  </div>
+              </form></div>
+              <div class="col-7"><form>
+                  <div class="mb-3">
+                    <label for="text" class="form-label">DIRECCION</label>
+                    <input type="text" class="form-control"required>
+                  </div>
+              </form></div>
+              </div>
+
+              <div class="row">
+                  <div class="col-5 "><form>
+                      <div class="mb-3">
+                        <label for="text" class="form-label">NOMBRE DE LA MADRE</label>
+                        <input type="text" class="form-control" required>
+                      </div>
+                  </form></div>
+                  <div class="col-7 "><form>
+                      <div class="mb-3">
+                        <label for="text" class="form-label">DIRECCION</label>
+                        <input type="text" class="form-control"required>
+                      </div>
+                  </form></div>
+                  </div>
+
+                  <div class="row">
+                      <div class="col-3"><label for="text" class="form-label">ESTADO CIVIL</label>
+                          <select class="form-select" aria-label="Default select example">
+                          <option selected>Seleccionar</option>
+                          <option value="1">SOLTERO</option>
+                          <option value="2">CASADO</option>
+                          <option value="3">VIUDO</option>
+                        </select></div>
+                      <div class="col-9 "><form>
+                          <div class="mb-3">
+                            <label for="text" class="form-label">NOMBRE DEL CONYUGE</label>
+                            <input type="text" class="form-control"required>
+                          </div>
+                      </form></div>
+                      </div>
+
+                      <div class="row">
+                          <div class="col-2 ">
+                              <label for="text" class="form-label">TIENE HIJOS</label><br>
+                              <div class="form-check form-check-inline">
+                              <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                              <label class="form-check-label" for="inlineCheckbox1">SI</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                              <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                              <label class="form-check-label" for="inlineCheckbox2">NO</label>
+                            </div>
+                            </div>
+                          <div class="col-3 "><form>
+                              <div class="mb-3">
+                                <label for="number" class="form-label">CUANTOS</label>
+                                <input type="number" class="form-control"required>
+                              </div>
+                          </form></div>
+                          </div>
+
+                          <div class="row">
+                              <div class="col-9 "><form>
+                                  <div class="mb-3">
+                                    <label for="text" class="form-label">NOMBRE </label>
+                                    <input type="text" class="form-control" required>
+                                  </div>
+                              </form></div>
+                              <div class="col-3 "><form>
+                                  <div class="mb-3">
+                                    <label for="date" class="form-label">FECHA DE NACIMIENTO</label>
+                                    <input type="date" class="form-control"required>
+                                  </div>
+                              </form></div>
+                              </div>
+
+                              <div class="row">
+                                  <div class="col-9 "><form>
+                                      <div class="mb-3">
+                                        <label for="text" class="form-label">NOMBRE </label>
+                                        <input type="text" class="form-control" required>
+                                      </div>
+                                  </form></div>
+                                  <div class="col-3"><form>
+                                      <div class="mb-3">
+                                        <label for="date" class="form-label">FECHA DE NACIMIENTO</label>
+                                        <input type="date" class="form-control"required>
+                                      </div>
+                                  </form></div>
+                                  </div>
+
+                                  <div class="row">
+                                      <div class="col-9 "><form>
+                                          <div class="mb-3">
+                                            <label for="text" class="form-label">NOMBRE </label>
+                                            <input type="text" class="form-control" required>
+                                          </div>
+                                      </form></div>
+                                      <div class="col-3 "><form>
+                                          <div class="mb-3">
+                                            <label for="date" class="form-label">FECHA DE NACIMIENTO</label>
+                                            <input type="date" class="form-control"required>
+                                          </div>
+                                      </form></div>
+                                    </div>
+
+          </div>
+
+<!-- tercero -->
+         
+          <div class="carousel-item">
+            
+            <h1>Otra Informacion</h1>
+
+            <div class="row">
+              <div class="col-4"><form>
+                  <div class="mb-3">
+                    <label for="number" class="form-label">ESTATURA (METROS): </label>
+                    <input type="number" class="form-control" required>
+                  </div>
+              </form></div>
+              <div class="col-4"><form>
+                  <div class="mb-3">
+                    <label for="text" class="form-label">COLOR DE CABELLO:</label>
+                    <input type="text" class="form-control"required>
+                  </div>
+              </form></div> 
+              <div class="col-4"><form>
+                <div class="mb-3">
+                  <label for="text" class="form-label">TIPO DE CABELLO:</label>
+                  <input type="text" class="form-control"required>
+                </div>
+            </form></div>
+            </div>
+
+            <div class="row">
+              <div class="col"><form>
+                  <div class="mb-3">
+                    <label for="number" class="form-label">PESO (LIBRAS): </label>
+                    <input type="number" class="form-control" required>
+                  </div>
+              </form></div>
+              <div class="col"><form>
+                  <div class="mb-3">
+                    <label for="text" class="form-label">COLOR DE OJOS:</label>
+                    <input type="text" class="form-control"required>
+                  </div>
+              </form></div> 
+              <div class="col"><form>
+                <div class="mb-3">
+                  <label for="text" class="form-label">LUNARES, CICATRICES:</label><br>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                    <label class="form-check-label" for="inlineRadio1">SI</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                    <label class="form-check-label" for="inlineRadio2">NO</label>
+                  </div>
+                </div>
+            </form></div>
+            <div class="col"><form>
+              <div class="mb-3">
+                <label for="text" class="form-label">COLOR DE OJOS:</label>
+                <input type="text" class="form-control"required>
+              </div>
+            </form></div>
+            </div>
+
+            <h1>En caso de emergencia llamar a:</h1>
+
+            <div class="row">
+              <div class="col-7"><form>
+                  <div class="mb-3">
+                    <label for="text" class="form-label">NOMBRE: </label>
+                    <input type="text" class="form-control" required>
+                  </div>
+              </form></div>
+              <div class="col-5"><form>
+                  <div class="mb-3">
+                    <label for="text" class="form-label">PARENTESTO:</label>
+                    <input type="text" class="form-control"required>
+                  </div>
+              </form></div> 
+            </div>
+
+            <div class="row">
+              <div class="col-7"><form>
+                  <div class="mb-3">
+                    <label for="text" class="form-label">DIRECCION: </label>
+                    <input type="text" class="form-control" required>
+                  </div>
+              </form></div>
+              <div class="col-5"><form>
+                  <div class="mb-3">
+                    <label for="number" class="form-label">TELEFONO DE CASA:</label>
+                    <input type="number" class="form-control"required>
+                  </div>
+              </form></div> 
+            </div>
+
+            <div class="row">
+              <div class="col-5"><form>
+                  <div class="mb-3">
+                    <label for="number" class="form-label">TELEFONO CELULAR: </label>
+                    <input type="number" class="form-control" required>
+                  </div>
+              </form>
+            </div>
+            <div class="boton">
+                <button type="submit" class="btn btn-info">GUARDAR</button></div>
+
+            </div>
+          </div>
+
+        </div>
+        <button class="carousel-control-prev btn-info" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next btn-primary" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+              
+    </div>
+    </div>
+  </div>
+</body>
+</html>
